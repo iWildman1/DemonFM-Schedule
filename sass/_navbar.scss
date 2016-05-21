@@ -1,0 +1,37 @@
+.navbar {
+  background-color: $slateBlack;
+  height: 78px;
+
+  .container {
+    height: 100%;
+
+    ul {
+      li {
+        a {
+          color: white;
+          transition: 0.3s all;
+          font-size: 18px;
+          font-weight: 300;
+
+          &:hover, &.active {
+            color: $demonRed;
+          }
+        }
+      }
+    }
+
+    .navbar-collapse {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .navbar-brand {
+      padding: 0;
+
+      img {
+        width: 95px;
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+/* TYPOGRAPHY */
+
+@font-face {
+    font-family: proxima;
+    src: url(/fonts/proxima_r.otf);
+    font-weight: 400;
+}
+
+@font-face {
+  font-family: proxima;
+  src: url(/fonts/proxima_b.otf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: proxima;
+  src: url(/fonts/proxima_l.otf);
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 70px;
+}
+
+/* LAYOUT HELPERS */
+body {
+  font-family: proxima, sans-serif;
+  font-weight: 300;
+}
+
+
+.container {
+  max-width: 1429px;
+  width: 80%;
+}

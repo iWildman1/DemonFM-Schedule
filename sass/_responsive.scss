@@ -1,0 +1,92 @@
+@media (max-width: 1600px) {
+
+  .schedule-main {
+    .circle {
+      p {
+        font-size: 16px;
+
+        strong {
+          font-size: 20px;
+        }
+
+        small {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .date-chooser .dropdown {
+    left: 100px;
+  }
+
+  .date-chooser {
+    p {
+      font-size: 23px;
+    }
+
+    i {
+      font-size: 16px;
+      top: 10px;
+    }
+  }
+
+  .on-air-corner {
+
+    right: 0;
+
+    .on-air-team {
+      width: 100px;
+      height: 100px;
+    }
+
+    .on-air-desc {
+      margin-left: 80px;
+
+      .on-air-heading {
+        font-size: 15px;
+      }
+
+      .on-air-name {
+        font-size: 24px;
+      }
+
+      a {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .jump-container {
+    h4 {
+      font-size: 23px;
+    }
+  }
+}
+
+@media (max-width: 1400px) {
+  .date-chooser {
+    position: relative;
+
+    &.affix {
+      top: 0;
+    }
+  }
+
+  .jump-container {
+    &.affix {
+      top: 180px;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .schedule-main .schedule-dots .circle {
+    width: 45px;
+    height: 45px;
+  }
+
+  .on-air-corner {
+    display: none;
+  }
+}

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Schedule - DemonFM</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css" charset="utf-8">
+    <link rel="stylesheet" href="/css/app.css" media="screen" charset="utf-8">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="jumbotron">
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img src="/img/logo.png" alt="DemonFM Logo" /></a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Strands</a></li>
+              <li><a href="#">Listen</a></li>
+              <li><a href="#" class="active">Schedule</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+      <h1>Schedule</h1>
+      <div class="down-arrow">
+        <i class="fa fa-chevron-down"></i>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="date-chooser" data-spy="affix" data-offset-top="300">
+          <div class="col-md-5">
+            <p id="dropdown-text">
+              Wednesday 18th May 2016
+            </p>
+            <span class="dropdown-handle">
+              <i class="fa fa-chevron-down dropdown-icon" id="dropdown-icon"></i>
+            </span>
+            <div class="dropdown" id="dropdown-main">
+              <ul id="dropdown-ul">
+                <li>Thursday 19th May 2016</li>
+                <li>Friday 20th May 2016</li>
+                <li>Saturday 21st May 2016</li>
+                <li>Sunday 22nd May 2016</li>
+                <li>Monday 23rd May 2016</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="on-air-corner">
+          <div class="col-md-1">
+              <img class="on-air-team" src="/img/onairteam.jpg" alt="Currently On-Air Team" />
+          </div>
+
+          <div class="col-md-3 on-air-desc">
+              <p class="on-air-heading">
+                Currently On Air:
+              </p>
+              <p class="on-air-name">
+                Ollie and Maddie
+              </p>
+              <p class="on-air-show">
+                Afternoon Show
+              </p>
+              <p class="on-air-time">
+                2pm - 4pm
+              </p>
+              <a class="listen-link" href="#">Listen Now</a>
+
+          </div>
+        </div>
+      </div>
+      <div class="schedule-main">
+        <div class="row jump-container">
+          <div class="col-md-2">
+            <h4>Jump:</h4>
+            <ul class="jump-list">
+              <li>Breakfast</li>
+              <li>Rewind</li>
+              <li>Intermission</li>
+              <li>Outermission</li>
+              <li>Afternoon Show</li>
+              <li>The Home Run</li>
+              <li>Catalyst</li>
+              <li>EDM</li>
+              <li>Urban</li>
+              <li>Late Nights</li>
+            </ul>
+          </div>
+        </div>
+        <div class="schedule-dots">
+          <div class="circle circle-past">
+            <p class="content-right">
+              8am <br><strong>Lewis and Guest</strong><br><small>Breakfast</small>
+            </p>
+          </div>
+          <div class="circle circle-past">
+            <p class="content-left">
+              10am <br><strong>John and George</strong><br><small>Rewind</small>
+            </p>
+          </div>
+          <div class="circle circle-past">
+            <p class="content-right">
+              12pm <br><strong>Intermission Team</strong><br><small>Intermission</small>
+            </p>
+          </div>
+          <div class="circle circle-past">
+            <p class="content-left">
+              1pm <br><strong>Outermission Team</strong><br><small>Outermission</small>
+            </p>
+          </div>
+          <div class="circle circle-current">
+            <p class="content-right">
+              2pm <br><strong>Ollie and Maddie</strong><br><small>Afternoon Show</small>
+            </p>
+          </div>
+          <div class="circle circle-next">
+            <p class="content-left">
+              4pm <br><strong>Hannah and Ben</strong><br><small>The Home Run</small>
+            </p>
+          </div>
+          <div class="circle">
+            <p class="content-right">
+              6pm <br><strong>Celeste and Dominique</strong><br><small>Catalyst</small>
+            </p>
+          </div>
+          <div class="circle">
+            <p class="content-left">
+              8pm <br><strong>Chris Carr</strong><br><small>EDM</small>
+            </p>
+          </div>
+          <div class="circle">
+            <p class="content-right">
+              10pm <br><strong>Deano Presto</strong><br><small>Urban</small>
+            </p>
+          </div>
+          <div class="circle">
+            <p class="content-left">
+              12am <br><strong>Nick Sharp</strong><br><small>Late Nights</small>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="/js/app.js"></script>
+  </body>
+</html>

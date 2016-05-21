@@ -1,0 +1,252 @@
+.date-chooser {
+  font-size: 30px;
+  margin-top: 20px;
+  z-index: 4;
+
+  .col-md-5 {
+    width: auto;
+  }
+
+  &.affix {
+    top: 100px;
+  }
+
+  p {
+    display: inline-block;
+    float: left;
+  }
+
+  .dropdown-handle {
+    position: relative;
+    padding-left: 45px;
+  }
+
+  .rotate-handle {
+    transform: translate(-50%, -50%) rotate(180deg);
+  }
+
+  i {
+    font-size: 18px;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.5s all;
+    cursor: pointer;
+  }
+
+  .drop-open {
+    transform: translateY(40px);
+    display: block;
+  }
+
+  .dropdown {
+    position: absolute;
+    left: 200px;
+    display: none;
+    opacity: 0;
+
+    ul {
+      border: 1px solid #686868;
+      background-color: white;
+      z-index: 200;
+      width: 210px;
+      border-radius: 5px;
+      padding-left: 20px;
+      padding-right: 20px;
+      list-style: none;
+      color: #686868;
+      font-size: 16px;
+      text-align: center;
+
+      li {
+        padding: 7px 0;
+        position: relative;
+        cursor: pointer;
+
+        &::after {
+          content: "";
+          position: absolute;
+          width: 20%;
+          border: 1px solid rgba(0, 0, 0, 0.3);
+          top: 0;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+
+        &:first-child {
+          &::after {
+            border: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+.on-air-corner {
+  position: absolute;
+  right: 30px;
+
+  p {
+    margin: 0;
+    padding: 0;
+  }
+
+
+  .on-air-team {
+    width: 150px;
+    height: 150px;
+  }
+
+  .on-air-desc {
+    margin-left: 120px;
+    font-weight: 400;
+    width: 50%;
+
+    .on-air-heading {
+      font-size: 18px;
+    }
+
+    .on-air-name {
+      font-size: 30px;
+    }
+
+    .on-air-show {
+      font-size: 16px;
+      color: rgba(32, 32, 32, 0.6);
+    }
+
+    .on-air-time {
+      font-size: 13px;
+      color: rgba(32, 32, 32, 0.6);
+      margin-bottom: 10px;
+    }
+
+    a {
+      font-size: 26px;
+      color: $demonRed;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.schedule-main {
+  margin-top: 100px;
+  position: relative;
+
+  h4 {
+    padding-left: 0;
+    font-size: 30px;
+    font-weight: 300;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+    font-size: 18px;
+    color: rgba(32, 32, 32, 0.6);
+  }
+
+  .schedule-dots {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    .circle {
+      position: relative;
+      border: 5px solid #686868;
+      border-radius: 100%;
+      width: 75px;
+      height: 75px;
+      text-align: center;
+      margin-top: 120px;
+      background-color: white;
+      z-index: 1;
+
+      &::before {
+        position: absolute;
+        border: 3px solid #686868;
+        width: 0;
+        height: 120px;
+        display: block;
+        content: "";
+        left: 50%;
+        top: -125px;
+        margin-left: -3px;
+        z-index: -1;
+      }
+
+      &.circle-past {
+        border: 5px solid #DF9495;
+
+        &::before {
+          border: 3px solid #DF9495;
+        }
+      }
+
+      &.circle-current {
+        border: 5px solid $demonRed;
+
+        &::before {
+          border: 3px solid #DF9495;
+        }
+      }
+
+      &.circle-next {
+
+        &::before {
+
+          border: 3px solid $demonRed;
+        }
+      }
+
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+
+    .circle:first-child:before {display: none;}
+
+    p {
+      color: #686868;
+      font-size: 20px;
+
+      strong {
+        font-weight: 400;
+        font-size: 24px;
+        color: #474747;
+      }
+
+      small {
+        font-size: 18px;
+      }
+    }
+
+    .content-right {
+      transform: translateX(80px);
+      text-align: left;
+      width: 250px;
+    }
+
+    .content-left {
+      transform: translateX(-270px);
+      text-align: right;
+      width: 250px;
+    }
+  }
+}
+
+.jump-container {
+  &.affix {
+    top: 250px;
+  }
+
+  .col-md-2 {
+    width: auto;
+  }
+}
