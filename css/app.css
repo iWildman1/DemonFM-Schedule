@@ -31,9 +31,14 @@ body {
 }
 
 .navbar {
-  background-color: #262626;
+  background-color: transparent;
   height: 78px;
   border: none;
+  -webkit-transition: 0.2s background-color;
+  transition: 0.2s background-color;
+}
+.navbar.navbar-darken {
+  background-color: #262626;
 }
 .navbar .container {
   height: 100%;

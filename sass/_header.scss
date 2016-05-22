@@ -1,7 +1,12 @@
 .navbar {
-  background-color: $slateBlack;
+  background-color: transparent;
   height: 78px;
   border: none;
+  transition: 0.2s background-color;
+  
+  &.navbar-darken {
+    background-color: $slateBlack;
+  }
 
   .container {
     height: 100%;

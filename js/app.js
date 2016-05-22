@@ -59,6 +59,7 @@ $(document).ready(function() {
     $('#dropdown-text').text(newSelection);
     closeMenu();
   })
+ 
 })
 
 function closeMenu() {
@@ -69,3 +70,13 @@ function closeMenu() {
     $('.dropdown').removeClass("fadeOutUp animated").css("display", "none");
   }, 300);
 }
+
+$(document).scroll(function() {
+  height = $(document).scrollTop();
+  
+  if (height < 100 && $(".navbar").hasClass("navbar-darken")) {
+    $(".navbar").removeClass("navbar-darken");
+  } else if (height > 100 && !$(".navbar").hasClass("navbar-darked")) {
+    $(".navbar").addClass("navbar-darken");
+  }
+});
